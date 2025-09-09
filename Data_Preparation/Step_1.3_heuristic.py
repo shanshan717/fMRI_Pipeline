@@ -5,7 +5,6 @@ def infotodict(seqinfo):
     """Heuristic evaluator for determining which runs belong where"""
     info = {}
 
-    # 不要在模板里写 "ses-" 前缀
     t1w = create_key('sub-{subject}/{session}/anat/sub-{subject}_{session}_T1w')
 
     info[t1w] = []
